@@ -63,9 +63,9 @@ The following hosted platforms and commercial software provide high-accuracy OCR
 
 ## 💻 Open-Source Software & Toolkits
 
-Open-source document processing frameworks, neural OCR engines, and document layout parsers allow legal teams and developers to build self-hosted, air-gapped, and cost-effective contract digitization pipelines without vendor lock-in. Entries are sorted in descending order of GitHub star count. 🌟
+Open-source document processing frameworks, neural OCR engines, and document layout parsers allow legal teams and developers to build self-hosted, air-gapped, and cost-effective contract digitization pipelines without vendor lock-in. Entries are sorted in descending order of GitHub Stars_Count. 🌟
 
-| Project & Repository | ⭐ GitHub Stars | 🛠️ Primary Language / Ecosystem | 📖 Description & Legal Digitization Use Case |
+| Project & Repository | ⭐ GitHub_Stars | 🛠️ Primary Language / Ecosystem | 📖 Description & Legal Digitization Use Case |
 | :--- | :--- | :--- | :--- |
 | [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) | [![Stars](https://img.shields.io/github/stars/Stirling-Tools/Stirling-PDF?style=social&color=white)](https://github.com/Stirling-Tools/Stirling-PDF/stargazers) | Java, Docker | Self-hosted, privacy-first web-based PDF manipulation and OCR suite capable of batch splitting, merging, watermarking, and converting legacy contracts without transmitting data to external third parties. |
 | [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | [![Stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=social&color=white)](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | Python, C++ | Ultra-lightweight and industrial-grade OCR system supporting 80+ languages, document layout analysis (PP-Structure), table recognition, and key information extraction (KIE) for complex contract documents. |
