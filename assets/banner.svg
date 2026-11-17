@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16;border-radius:14px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111c35"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="purple-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="scanner-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Keyframe Animations */
+    @keyframes scanMove {
+      0% { transform: translateY(20px); opacity: 0.3; }
+      50% { transform: translateY(320px); opacity: 0.9; }
+      100% { transform: translateY(20px); opacity: 0.3; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.08); }
+    }
+    @keyframes floatParticle1 {
+      0%, 100% { transform: translate(0, 0); opacity: 0.2; }
+      50% { transform: translate(25px, -30px); opacity: 0.7; }
+    }
+    @keyframes floatParticle2 {
+      0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+      50% { transform: translate(-30px, 25px); opacity: 0.8; }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -80; }
+    }
+
+    .scanner-beam {
+      animation: scanMove 4.5s ease-in-out infinite;
+    }
+    .orb-left {
+      transform-origin: 180px 180px;
+      animation: pulseGlow 6s ease-in-out infinite;
+    }
+    .orb-right {
+      transform-origin: 1020px 180px;
+      animation: pulseGlow 7s ease-in-out infinite 1s;
+    }
+    .p1 { animation: floatParticle1 5s ease-in-out infinite; }
+    .p2 { animation: floatParticle2 6s ease-in-out infinite 0.5s; }
+    .data-grid {
+      stroke: #334155;
+      stroke-width: 1;
+      stroke-dasharray: 4, 8;
+      animation: dashCycle 12s linear infinite;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Subtle Dynamic Tech Grid / Network Lines (strictly behind text) -->
+  <g opacity="0.25">
+    <path class="data-grid" d="M 0 60 L 1200 60 M 0 120 L 1200 120 M 0 180 L 1200 180 M 0 240 L 1200 240 M 0 300 L 1200 300" />
+    <path class="data-grid" d="M 120 0 L 120 360 M 300 0 L 300 360 M 600 0 L 600 360 M 900 0 L 900 360 M 1080 0 L 1080 360" />
+  </g>
+
+  <!-- Animated Ambient Glow Orbs (far left and far right background) -->
+  <circle class="orb-left" cx="160" cy="180" r="140" fill="url(#cyan-glow)"/>
+  <circle class="orb-right" cx="1040" cy="180" r="150" fill="url(#purple-glow)"/>
+
+  <!-- Dynamic OCR Laser Scanning Beam (background sweep effect) -->
+  <g class="scanner-beam">
+    <line x1="80" y1="0" x2="1120" y2="0" stroke="url(#scanner-line-grad)" stroke-width="2.5" filter="url(#glow)"/>
+  </g>
+
+  <!-- Floating Digital Data Sparkles (in background margins) -->
+  <g class="p1">
+    <circle cx="140" cy="90" r="3" fill="#38bdf8"/>
+    <circle cx="210" cy="270" r="2" fill="#818cf8"/>
+    <circle cx="1070" cy="80" r="3.5" fill="#c084fc"/>
+    <circle cx="980" cy="290" r="2.5" fill="#38bdf8"/>
+  </g>
+  <g class="p2">
+    <circle cx="260" cy="110" r="2" fill="#a78bfa"/>
+    <circle cx="100" cy="220" r="3" fill="#60a5fa"/>
+    <circle cx="1120" cy="240" r="2" fill="#f472b6"/>
+    <circle cx="1010" cy="120" r="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Decorative Side Tech Nodes (Left: OCR Contract Document, Right: AI Neural Network) -->
+  <g transform="translate(70, 115)" opacity="0.6">
+    <!-- Document Card -->
+    <rect x="0" y="0" width="85" height="120" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="15" y1="25" x2="70" y2="25" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="42" x2="60" y2="42" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="15" y1="56" x2="65" y2="56" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="15" y1="70" x2="50" y2="70" stroke="#64748b" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="15" y="85" width="22" height="18" rx="3" fill="#0284c7" opacity="0.8"/>
+    <circle cx="58" cy="94" r="6" fill="#a855f7" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(1040, 115)" opacity="0.6">
+    <!-- AI Brain / Knowledge Graph Node -->
+    <rect x="0" y="0" width="90" height="120" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <circle cx="45" cy="35" r="9" fill="#a855f7"/>
+    <circle cx="25" cy="85" r="7" fill="#38bdf8"/>
+    <circle cx="65" cy="85" r="7" fill="#ec4899"/>
+    <line x1="45" y1="35" x2="25" y2="85" stroke="#64748b" stroke-width="2"/>
+    <line x1="45" y1="35" x2="65" y2="85" stroke="#64748b" stroke-width="2"/>
+    <line x1="25" y1="85" x2="65" y2="85" stroke="#64748b" stroke-width="2"/>
+  </g>
+
+  <!-- FOREGROUND: Clean, Sharp, Unobstructed Content (Never covered by dynamic elements) -->
+  
+  <!-- Category Pill Badge -->
+  <g transform="translate(600, 58)">
+    <rect x="-180" y="0" width="360" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="-152" cy="15" r="5" fill="#10b981"/>
+    <text x="-135" y="19" fill="#94a3b8" font-size="11.5" font-weight="600" letter-spacing="1.5">LEGALTECH &amp; INTELLIGENT DOCUMENT AI</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="148" text-anchor="middle" font-size="40" font-weight="800" fill="url(#text-grad)" letter-spacing="-0.5" filter="url(#glow)">
+    Awesome Legal OCR
+  </text>
+  <text x="600" y="194" text-anchor="middle" font-size="28" font-weight="700" fill="#f8fafc" letter-spacing="0.2">
+    &amp; Legacy Contract Digitization
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="238" text-anchor="middle" font-size="14.5" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+    Curated Hub for Document AI, Vision-Language Transformers, Layout Parsing &amp; CLM Extraction
+  </text>
+
+  <!-- Bottom Interactive Tag Pills -->
+  <g transform="translate(600, 276)">
+    <!-- Tag 1 -->
+    <rect x="-315" y="0" width="135" height="28" rx="14" fill="#0f172a" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="-247" y="18" text-anchor="middle" font-size="11.5" font-weight="600" fill="#60a5fa">📄 Deep Legal OCR</text>
+
+    <!-- Tag 2 -->
+    <rect x="-165" y="0" width="150" height="28" rx="14" fill="#0f172a" stroke="#7c3aed" stroke-width="1.2"/>
+    <text x="-90" y="18" text-anchor="middle" font-size="11.5" font-weight="600" fill="#c084fc">📑 Contract Parsing</text>
+
+    <!-- Tag 3 -->
+    <rect x="0" y="0" width="145" height="28" rx="14" fill="#0f172a" stroke="#059669" stroke-width="1.2"/>
+    <text x="72" y="18" text-anchor="middle" font-size="11.5" font-weight="600" fill="#34d399">⚡ Open Source IDP</text>
+
+    <!-- Tag 4 -->
+    <rect x="160" y="0" width="155" height="28" rx="14" fill="#0f172a" stroke="#d97706" stroke-width="1.2"/>
+    <text x="237" y="18" text-anchor="middle" font-size="11.5" font-weight="600" fill="#fbbf24">🌐 Enterprise Cloud</text>
+  </g>
+
+</svg>

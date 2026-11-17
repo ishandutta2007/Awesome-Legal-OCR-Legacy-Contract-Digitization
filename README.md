@@ -1,38 +1,52 @@
-# Awesome Legal OCR & Legacy Contract Digitization
+<div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Legal OCR and Legacy Contract Digitization Banner" width="100%">
+</p>
+
+# ⚖️ Awesome Legal OCR & Legacy Contract Digitization 📄✨
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Legal-OCR-Legacy-Contract-Digitization/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Legal-OCR-Legacy-Contract-Digitization/graphs/commit-activity)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-> A curated directory of software, tools, machine learning models, and cloud APIs for Legal OCR, Intelligent Document Processing (IDP), legacy contract digitization, clause extraction, layout parsing, and document intelligence.
-
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [Proprietary & SaaS Platforms](#proprietary--saas-platforms)
-- [Open-Source Software & Toolkits](#open-source-software--toolkits)
-- [Key Features to Look For](#key-features-to-look-for)
-- [Contributing](#contributing)
-- [License](#license)
+<p align="center">
+  <strong>🚀 A curated directory of software, tools, neural models, and enterprise cloud APIs for Legal OCR, Intelligent Document Processing (IDP), legacy contract digitization, clause extraction, layout parsing, and document intelligence.</strong>
+</p>
 
 ---
 
-## Sector Overview & Market Dynamics
+</div>
 
-The global Intelligent Document Processing (IDP) and Legal OCR market is estimated at **$1.8 billion to $2.5 billion in 2024**, projected to surpass **$6.5 billion to $8.0 billion by 2030** at an estimated compound annual growth rate (CAGR) of ~28%–32%, driven by enterprise migrations to automated contract lifecycle management (CLM), regulatory compliance audits, and LLM-powered legacy contract discovery.
+## 📑 Table of Contents
 
-Market concentration exhibits a **moderately fragmented landscape** bifurcated into two tiers: hyperscalers (Microsoft, Google Cloud, AWS) dominate high-throughput utility OCR and foundational vision-language extraction, while specialized vertical vendors (Icertis, Hyperscience, ABBYY, Rossum) capture high-margin contract intelligence and human-in-the-loop legal workflow niches, preventing a single winner-take-all outcome.
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 Proprietary & SaaS Platforms](#-proprietary--saas-platforms)
+- [💻 Open-Source Software & Toolkits](#-open-source-software--toolkits)
+- [🔍 Key Features to Look For](#-key-features-to-look-for)
+- [🌟 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
 ---
 
-## Proprietary & SaaS Platforms
+## 📊 Sector Overview & Market Dynamics
 
-The following hosted platforms and commercial software provide high-accuracy OCR, intelligent document analysis, table recognition, and metadata extraction for legacy contracts and legal paperwork. Entries are sorted in descending order of vendor scale (company valuation / market capitalization).
+The global Intelligent Document Processing (IDP) and Legal OCR market is estimated at **$1.8 billion to $2.5 billion in 2024**, projected to surpass **$6.5 billion to $8.0 billion by 2030** at an estimated compound annual growth rate (CAGR) of ~28%–32%, driven by enterprise migrations to automated contract lifecycle management (CLM), regulatory compliance audits, and LLM-powered legacy contract discovery. 📈
 
-| Software / Platform | Vendor Valuation / Revenue Scale | Starting Pricing | Free Tier / Trial Allowance | Overview & Legal OCR Capabilities |
+Market concentration exhibits a **moderately fragmented landscape** bifurcated into two tiers: hyperscalers (Microsoft, Google Cloud, AWS) dominate high-throughput utility OCR and foundational vision-language extraction, while specialized vertical vendors (Icertis, Hyperscience, ABBYY, Rossum) capture high-margin contract intelligence and human-in-the-loop legal workflow niches, preventing a single winner-take-all outcome. 🌐
+
+---
+
+## 🏢 Proprietary & SaaS Platforms
+
+The following hosted platforms and commercial software provide high-accuracy OCR, intelligent document analysis, table recognition, and metadata extraction for legacy contracts and legal paperwork. Entries are sorted in descending order of vendor scale (company valuation / market capitalization). 🏆
+
+| Software / Platform | 💰 Vendor Valuation / Revenue Scale | 🏷️ Starting Pricing | 🎁 Free Tier / Trial Allowance | 📝 Overview & Legal OCR Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
 | [Microsoft Azure AI Document Intelligence](https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence) | **$3.1 Trillion** *(Market Cap)* | **$1.50 per 1,000 pages** (Read OCR) / **$10.00 per 1,000 pages** (Prebuilt contract model) | **Free F0 tier: 500 pages/month** forever (up to 20 pages/minute rate limit) | Cloud-scale document extraction service with dedicated prebuilt models for contracts, agreements, invoice headers, and complex nested table hierarchies. |
 | [Google Cloud Document AI](https://cloud.google.com/document-ai) | **$2.1 Trillion** *(Market Cap)* | **$1.50 per 1,000 pages** (Document OCR) / **$30.00 per 1,000 pages** (Contract & specialized parsers) | **First 1,000 pages/month free** (Document OCR) + **$300 90-day free trial credit** for new Google Cloud accounts | Unified document understanding platform with deep learning neural networks optimized for high-volume contract parsing, clause identification, and legal entity extraction. |
@@ -47,11 +61,11 @@ The following hosted platforms and commercial software provide high-accuracy OCR
 
 ---
 
-## Open-Source Software & Toolkits
+## 💻 Open-Source Software & Toolkits
 
-Open-source document processing frameworks, neural OCR engines, and document layout parsers allow legal teams and developers to build self-hosted, air-gapped, and cost-effective contract digitization pipelines without vendor lock-in. Entries are sorted in descending order of GitHub star count.
+Open-source document processing frameworks, neural OCR engines, and document layout parsers allow legal teams and developers to build self-hosted, air-gapped, and cost-effective contract digitization pipelines without vendor lock-in. Entries are sorted in descending order of GitHub star count. 🌟
 
-| Project & Repository | GitHub Stars | Primary Language / Ecosystem | Description & Legal Digitization Use Case |
+| Project & Repository | ⭐ GitHub Stars | 🛠️ Primary Language / Ecosystem | 📖 Description & Legal Digitization Use Case |
 | :--- | :--- | :--- | :--- |
 | [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) | [![Stars](https://img.shields.io/github/stars/Stirling-Tools/Stirling-PDF?style=social&color=white)](https://github.com/Stirling-Tools/Stirling-PDF/stargazers) | Java, Docker | Self-hosted, privacy-first web-based PDF manipulation and OCR suite capable of batch splitting, merging, watermarking, and converting legacy contracts without transmitting data to external third parties. |
 | [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | [![Stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleOCR?style=social&color=white)](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | Python, C++ | Ultra-lightweight and industrial-grade OCR system supporting 80+ languages, document layout analysis (PP-Structure), table recognition, and key information extraction (KIE) for complex contract documents. |
@@ -75,26 +89,41 @@ Open-source document processing frameworks, neural OCR engines, and document lay
 
 ---
 
-## Key Features to Look For
+## 🔍 Key Features to Look For
 
-When evaluating OCR and Intelligent Document Processing systems for legacy contract digitization, consider the following technical capabilities:
+When evaluating OCR and Intelligent Document Processing systems for legacy contract digitization, consider the following technical capabilities: 🧭
 
-1. **Layout & Multi-Column Parsing**: Legacy legal documents frequently feature multi-column layouts, margin notes, and footnotes. A high-quality engine reconstructs the natural reading order without intertwining adjacent columns.
-2. **Table & Schedule Extraction**: Contracts heavily rely on financial exhibits, fee schedules, and pricing grids. The OCR solution must extract cell coordinates and nested table headers faithfully into structured formats (CSV/JSON).
-3. **Deskewing & Binarization**: Historic contracts and carbon copies often suffer from skewed scans, bleed-through, faded inks, and background noise. Adaptive thresholding and deskew pre-processing ensure optimal text recognition accuracy.
-4. **PDF/A Compliance**: For archival and regulatory admissibility, digitizing legacy contracts requires exporting into ISO-standardized PDF/A formats with embedded, searchable text layers.
-5. **Air-Gapped & On-Premises Deployment**: Sensitive legal records frequently cannot leave an organization's security perimeter. Self-hosted and open-source models ensure complete data sovereignty and GDPR/HIPAA compliance.
-6. **Key Clause & Entity Identification**: Advanced IDP systems use downstream NLP/LLM layers to automatically identify effective dates, governing laws, indemnity caps, termination notices, and non-compete clauses.
-
----
-
-## Contributing
-
-Contributions, additions, and suggestions are welcome!
-Please review the [contribution guidelines](https://github.com/ishandutta2007/Awesome-Legal-OCR-Legacy-Contract-Digitization/blob/main/README.md) or submit a pull request with new legal OCR tools, benchmarks, and libraries.
+1. **📑 Layout & Multi-Column Parsing**: Legacy legal documents frequently feature multi-column layouts, margin notes, and footnotes. A high-quality engine reconstructs the natural reading order without intertwining adjacent columns.
+2. **📊 Table & Schedule Extraction**: Contracts heavily rely on financial exhibits, fee schedules, and pricing grids. The OCR solution must extract cell coordinates and nested table headers faithfully into structured formats (CSV/JSON).
+3. **✨ Deskewing & Binarization**: Historic contracts and carbon copies often suffer from skewed scans, bleed-through, faded inks, and background noise. Adaptive thresholding and deskew pre-processing ensure optimal text recognition accuracy.
+4. **🗄️ PDF/A Compliance**: For archival and regulatory admissibility, digitizing legacy contracts requires exporting into ISO-standardized PDF/A formats with embedded, searchable text layers.
+5. **🔒 Air-Gapped & On-Premises Deployment**: Sensitive legal records frequently cannot leave an organization's security perimeter. Self-hosted and open-source models ensure complete data sovereignty and GDPR/HIPAA compliance.
+6. **🧠 Key Clause & Entity Identification**: Advanced IDP systems use downstream NLP/LLM layers to automatically identify effective dates, governing laws, indemnity caps, termination notices, and non-compete clauses.
 
 ---
 
-## License
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Legal-OCR-Legacy-Contract-Digitization&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Legal-OCR-Legacy-Contract-Digitization&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+If you find this legal OCR and contract digitization curated resource helpful:
+- ⭐ **Star** this repository on GitHub to boost visibility for the open-source community!
+- 🍴 **Fork** it to save it to your own profile or create your own specialized adaptations.
+- 📢 **Share** it with fellow legaltech engineers, legal ops teams, researchers, and data engineers.
+- ☕ **Sponsor & Buy a Coffee**: Support ongoing maintenance and curated updates directly via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 Contributing
+
+Contributions, additions, and suggestions are welcome! 💡
+Please review the contribution guidelines or submit a pull request with new legal OCR tools, benchmarks, and libraries.
+
+---
+
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
